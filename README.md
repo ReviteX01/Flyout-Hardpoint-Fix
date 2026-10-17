@@ -39,7 +39,7 @@ The mod turns the configured hardpoint force into an **instantaneous impulse** u
 
 `impulse (N·s) = hardpoint force (N) × ImpulseEquivalentDurationSeconds (s)`
 
-With the default `1` second, a 100 kN hardpoint produces 100,000 N·s, corresponding to a 72.3 m/s velocity change for a 1,382 kg missile. This is an intentional instantaneous ejection approximation, **not** a simulation of the hardpoint applying 100 kN continuously for one second.
+With the default `1` second, a 100 kN hardpoint produces 100,000 N·s. This is an intentional instantaneous ejection approximation, **not** a simulation of the hardpoint applying 100 kN continuously for one second.
 
 ## Configuration
 
@@ -76,7 +76,7 @@ Available `HardpointAxis` values: `Up`, `Down`, `Forward`, `Backward`, `Right`, 
 
 Additional `LaunchDirection` modes (`AircraftUp`, `WorldUp`, `MissileForward`, `ConnectorOutward`) remain available for specialised use, but `Hardpoint` is the recommended default.
 
-**Existing configurations are preserved when updating.** If an older installation already has `HardpointAxis=Up`, edit it to `HardpointAxis=Down` manually, or remove the config file while Flyout is closed to regenerate the defaults. The mod does not overwrite a user's explicit axis choice.
+**Existing configurations are preserved when updating.**
 
 ## Building from source
 
