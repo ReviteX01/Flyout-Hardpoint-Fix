@@ -24,6 +24,18 @@ Game or MelonLoader updates can change the IL2CPP API and may require a rebuilt 
 
 Do not keep multiple versions of `FlyoutColdLaunch.dll` installed. To uninstall, remove the DLL from `Mods/`; the optional configuration file can be deleted separately.
 
+## How to use
+
+1. Attach a missile to a hardpoint.
+
+2. Set the hardpoint's Ejection Force to your desired value.
+
+3. Fire the missile with F.
+
+**That's it!** The missile will automatically be ejected using the hardpoint's configured force and direction.
+
+Works with VLS systems, conventional aircraft pylons, angled launchers, and more.
+
 ## How it works
 
 1. A Harmony patch observes a procedural missile's normal fire operation and identifies the **specific Connector hardpoint** associated with that missile.
