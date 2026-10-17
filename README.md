@@ -90,16 +90,6 @@ powershell -ExecutionPolicy Bypass -File .\build.ps1 -FlyoutDirectory "C:\Progra
 
 Adjust the path to your installation. The build script resolves the game's generated assemblies and MelonLoader dependencies, builds the `net6.0` x64 project in Release configuration, and copies the resulting `FlyoutColdLaunch.dll` to the game's `Mods/` directory **only when compilation succeeds**.
 
-The compiled DLL is also available under `bin/Release/net6.0/`. Distribute **only this mod DLL**, not Flyout's assemblies, MelonLoader's dependencies, or proprietary game files.
-
-For source-level regression tests, install `pytest` and run:
-
-```powershell
-python -m pytest tests -q
-```
-
-Tests that inspect Flyout's generated `Assembly-CSharp.dll` are optional and run when you set the `FLYOUT_GAME_ASSEMBLY` environment variable to its full path. The repository does not contain proprietary game binaries.
-
 ## Limitations
 
 - Supports the **procedural-missile launch path** and requires an identifiable Connector hardpoint with a valid positive force. Standalone missiles or other weapon types are not modified.
