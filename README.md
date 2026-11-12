@@ -1,3 +1,9 @@
+# This Mod is deprecated!
+
+**Devs fixed the very issue this mod fixes, update the game or use the mod for an older version. Tested only for the latest version before the fix.**
+
+Page will be archived.
+
 # Flyout Hardpoint Fire Fix
 
 A lightweight [MelonLoader](https://github.com/LavaGang/MelonLoader) mod for **Flyout** that combines normal missile firing with the ejection force configured on the missile's hardpoint.
